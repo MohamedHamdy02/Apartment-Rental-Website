@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <script src="./icons/all.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--------------N A V I G A T I O N-------------->
+    <nav id="navContent">
+        <div class="nav-content">
+            <i class="fa-solid fa-xmark cust-1" onclick="hideMenu()"></i>
+            <h3>Rental</h3>
+            <h4>from $99</h4>
+            <h6>per night</h6>
+            <form action="#">
+                <div class="form-bar">
+                    <label for="date">
+                        <p>
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Check in
+                        </p>
+                    </label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-bar">
+                    <label for="dat">
+                        <p>
+                            <i class="fa-regular fa-calendar"></i>
+                            Check out
+                        </p>
+                    </label>
+                    <input type="date" name="date" id="dat">
+                </div>
+                <div class="form-bar">
+                    <label for="number">
+                        <p>
+                            <i class="fa-solid fa-person"></i>
+                            Adults
+                        </p>
+                    </label>
+                    <input type="number" name="number" id="number">
+                    <label for="num">
+                </div>
+                    <p>
+                        <i class="fa-solid fa-child-reaching"></i>
+                        Kids
+                    </p>
+                </label>
+                <input type="number" name="number" id="num">
+                <p>
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search availabilty
+                    </button>
+                </p>
+            </form>
+            <div class="nav-link">
+                <a href="#">
+                    <i class="fa-solid fa-building"></i>
+                    Apartment
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-rss"></i>
+                    Subscribe
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--M E N U - B U T T O N - S M A L L - S C R E E N-->
+
+    <div class="menu-small-screen" id="smallScreen">
+        <h2>Rental</h2>
+        <i class="fa-solid fa-bars cust "onclick="showMenu()"></i>
+    </div>
+
+    <!--------M A I N - C O N T A I N E R--------->
+    <main class="main">
+        <section class="apartment">
+            <div class="section-title">
+                <h2>
+                    The Apartment
+                </h2>
+                <img src="./imgs/livingroom.jpg" alt="">
+                <div class="layer">
+                    <p>
+                        Living Room
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./imgs/livingroom.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imgs/diningroom.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imgs/bedroom.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./imgs/livingroom2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!----------HOUSE ROOMS--------->
+        <section class="container">
+            <h3>The Space</h3>
+                <div class="row-1">
+                    <div class="col-6">
+                        <p>
+                            <i class="fa-solid fa-person padding"></i>
+                            Max people: 4
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-bath padding"></i>
+                            Bathrooms: 2
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-bed padding"></i>
+                            Bedrooms: 1
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <i class="fa-regular fa-clock padding"></i>
+                            Check In: After 3PM
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-clock padding"></i>
+                            Check Out: 12PM
+                        </p>
+                    </div>
+                </div>
+                <hr style="width: 100%; border: 1px solid #ccc;">
+                <h3>Amenities</h3>
+                <div class="row-1">
+                    <div class="col-6">
+                        <p>
+                            <i class="fa-solid fa-shower padding"></i>
+                            Shower
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-wifi padding"></i>
+                            WiFi
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-tv padding"></i>
+                            TV
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <i class="fa-solid fa-utensils padding"></i>
+                            Kitchen
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-temperature-quarter padding"></i>
+                            Heating
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-wheelchair padding"></i>
+                            Accessible
+                        </p>
+                    </div>
+                </div>
+                <hr style="width: 100%; border: 1px solid #ccc;">
+
+                <!-------I N F O R M A T I O N------->
+                <div class="info-container">
+                    <h3>Extra Info</h3>
+                    <p>
+                        Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        We accept:
+                        <i class="fa-regular fa-credit-card"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </p>
+                </div>
+                <hr style="width: 100%; border: 1px solid #ccc;">
+                <!----------R U L E S--------->
+                <div class="rules-container">
+                    <h3>Rules</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Subscribe to receive updates on available dates and special offers.
+                    </p>
+                    <button class="btn btn-1" type="submit">
+                        Subscribe
+                    </button>
+                </div>
+                <hr style="width: 100%; border: 1px solid #ccc;">
+
+                <!-----C O N T A C T------->
+                <div class="contact-section">
+                    <h3>Contact</h3>
+                    <p>
+                        <i class="fa-solid fa-location-dot padding"></i>
+                        Chicago, US
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone padding"></i>
+                        Phone: +00 151515
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-envelope padding"></i>
+                        Email: mail@mail.com
+                    </p>
+                    <p>Questions? Go ahead, ask them:</p>
+                    <form action="#">
+                        <input class="input" type="text" name="name" id="name" required placeholder="Name">
+                        <input class="input" type="text" name="mail" id="mail" required placeholder="Email">
+                        <input class="input" type="text" name="msg" id="msg" required placeholder="Message">
+                        <button class="btn btn-1" type="submit">
+                            Send a Message
+                        </button>
+                    </form>
+                    <p class="footer">Powered by <a href="#">Mohamed Hmady</a></p>
+                </div>
+        </section>
+    </main>
+
+    <script>
+        var navContent = document.getElementById ("navContent")
+
+        function showMenu () {
+            navContent.style.width = "300px"
+        }
+        function hideMenu () {
+            navContent.style.width = "0"
+        }
+    </script>
+</body>
+</html>

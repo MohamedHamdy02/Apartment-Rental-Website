@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+/* ------------N A V I G A T I O N----------------- */
+
+nav {
+  width: 300px;
+  background-color: #f1f1f1;
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+}
+
+.nav-content {
+  width: 80%;
+  margin: auto;
+}
+
+.nav-content h3 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.nav-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.nav-content h6 {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.form-bar {
+  margin: 0.7rem 0;
+}
+
+label {
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+input:focus {
+  outline: 1px solid black;
+}
+
+.btn {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: gray;
+}
+
+.nav-link a {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link a:hover {
+  background-color: #ccc;
+}
+
+.cust {
+  display: none;
+}
+
+.cust-1 {
+  display: none;
+}
+
+@media (max-width: 993px) {
+
+    nav {
+        z-index: 1;
+        width: 0;
+    }
+  .cust {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  .cust-1 {
+    display: block;
+    float: right;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+/*M E N U - B U T T O N - S M A L L - S C R E E N--*/
+
+.menu-small-screen {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  .menu-small-screen {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 3.5rem;
+    color: white;
+  }
+  .menu-small-screen h2 {
+    margin: 1rem 1rem;
+  }
+  .cust {
+    margin: 1rem 1rem;
+  }
+}
+
+/* --------M A I N - C O N T A I N E R--------- */
+
+.main {
+  padding-top: 5rem;
+  margin-left: 20rem;
+}
+
+.apartment {
+  width: 100%;
+  margin: auto;
+}
+
+.section-title {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4caf50;
+}
+
+.section-title img {
+    width: 97%;
+}
+
+.layer {
+  position: absolute;
+  background-color: black;
+  color: #f1f1f1;
+  bottom: 15px;
+  padding: 1rem 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: .8rem;
+}
+
+.col {
+    width: 22.7%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.col:hover {
+  opacity: 1;
+}
+
+.col img {
+  width: 100%;
+}
+
+@media (max-width: 993px) {
+  .main {
+    padding-top: 2rem;
+    margin-left: 0;
+  }
+  .apartment {
+    width: 90%;
+    margin: auto;
+  }
+  .section-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .section-title img {
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .col {
+    flex-basis: 20%;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: auto;
+  }
+}
+
+
+/* ----------HOUSE ROOMS--------- */
+
+.container h3 {
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.row-1 {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.col-6 {
+    width: 49%;
+}
+
+.col-6 p {
+    margin: 1.5rem 0;
+}
+
+.padding {
+    margin-right: .5rem;
+}
+
+@media (max-width: 993px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* -------I N F O R M A T I O N------- */
+
+.info-container p {
+  margin-bottom: 1.5rem;
+}
+
+
+/* !----------R U L E S--------- */
+
+.btn-1 {
+  width: 32%;
+}
+
+.rules-container p {
+  margin-bottom: 1.5rem;
+  padding-right: 1.3rem;
+}
+
+@media (max-width: 993px) {
+  .btn-1 {
+    width: 100%;
+  }
+}
+
+/* -----C O N T A C T------- */
+
+.contact-section p {
+  margin-bottom: 1rem ;
+}
+
+.input {
+  width: 98%;
+  padding: .5rem .5rem;
+  outline: none;
+}
+
+.input:focus {
+  outline: 1px solid black;
+}
+
+.footer {
+  padding-top: 3rem;
+}
+
+.footer a {
+  color: red;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+@media (max-width: 993px) {
+  .input {
+    width: 100%;
+  }
+}
